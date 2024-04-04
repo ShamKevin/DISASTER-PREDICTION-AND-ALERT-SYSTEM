@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        /* CSS styles remain the same */
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Registration</h2>
+        <form action="register.php" method="POST">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="text" id="mobile" name="mobile" required>
+            </div>
+            <div class="input-group">
+                <label for="otp">OTP Verification</label>
+                <input type="text" id="otp" name="otp" required>
+                <button type="button" id="generateOTP">Generate OTP</button>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>

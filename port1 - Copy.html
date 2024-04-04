@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disaster Prediction</title>
+    <meta name="viewport" content="width=device-width", intial-scale=1.0>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="file:///C:/Users/manis/OneDrive/Desktop/Utkranti3.0/Project%20Data/WEB/assets/img/title-icon1.jpg">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+</head>
+<script>
+    
+</script>
+<style>
+    .header
+{
+  overflow: hidden;
+  text-align: center;
+  background-color: black;
+  padding: 20px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+.navbar li:hover
+{
+  background-color: #0099cc;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+*
+{
+box-sizing: border-box;
+}
+
+/*Create three equal columns that floats to*/
+.a1
+{
+  float: left;
+  padding: 10px;
+  text-align: justify; 
+}
+/*clear float safter the columns*/
+.row:after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+/*For mobiles phones*/
+[class*="col-"]
+{
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px)
+{
+  /*For Desktop*/
+  .col-1 {width: 33.33%;}
+  .col-2 {width: 33.33%;}
+  .col-3 {width: 33.33%;}
+}
+
+img
+{
+  width: 100%;
+  /*height: auto;*/
+  height: 365;
+  width: 365;
+}
+
+h1
+{
+  color: white;
+  background: red;
+}
+
+/*Footer*/
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h4 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+</style>
+<body>
+    <div class="header">
+        <font size="9">Disaster Prediction With Alert System </font>
+    </div>
+
+    <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="https://mausam.imd.gov.in/imd_latest/contents/flash_flood.php">Current Flood</a></li>
+          <li><a href="https://zoom.earth/">Global Map</a></li>
+          <li><a href="#contact">Regions</a></li>
+          <li><a href="file:///C:/xampp/htdocs/New%20folder/NGP-DISASTER%20SVM/NGP-DISASTER%20SVM/portal.html">Monitor</a></li>
+
+          <li><a href="#contact">Real Time Data</a></li>
+          <li style="float:right"><a class="active" href="file:///C:/xampp/htdocs/New%20folder/NGP-DISASTER%20SVM/NGP-DISASTER%20SVM/reg.html">Register</a></li>
+          <li style="float:right"><a class="active" href="https://earthquaketrack.com/p/india/recent">NEWS</a></li>
+        </ul>
+    </div>
+
+    <!--Three Columns-->
+<div class="row">
+        <div class="col-1 a1">
+            <h3>Global Disaster</h3>
+            <p> The Global Flood Detection System monitors floods worldwide using near-real time satellite data. Surface water extent is observed using passive microwave remote sensing (AMSR2 and GPM sensors). When surface water increases significantly (anomalies with probability of less than 99.5%), the system flags it as a flood. Time series are calculated in more than 10000 monitoring areas, along with small scale flood maps and animations.
+            </p>
+        </div>
+        <div class="col-3 a1">
+            <h2>Detection of Disaster</h2>
+            <p> To detect a flood the system observes various natural factors, which includes humidity, temperature, water level and flow level. To collect data of mentioned natural factors the system consist of different sensors which collects data for individual parameters. The water level is always under observation by a float sensor, which work by opening and closing circuits (dry contacts) as water levels rise and fall. It normally rest in the closed position, meaning the circuit is incomplete and no electricity is passing through the wires yet. Once the water level drops below a predetermined point, the circuit completes itself and sends electricity through the completed circuit to trigger an alarm.
+            </p>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/9k=" height="365" width="365"> {% endcomment %}
+        </div>
+</div>      
+        <div class="footer">
+          <div class="contain">
+          <div class="col">
+            <h4>Company</h4>
+            <ul>
+              <li>About</li>
+              <li>Mission</li>
+              <li>Services</li>
+              <li>Social</li>
+              <li>Get in touch</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Products</h4>
+            <ul>
+              <li>About</li>
+              <li>Mission</li>
+              <li>Services</li>
+              <li>Social</li>
+              <li>Get in touch</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Accounts</h4>
+            <ul>
+              <li>About</li>
+              <li>Mission</li>
+              <li>Services</li>
+              <li>Social</li>
+              <li>Get in touch</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Resources</h4>
+            <ul>
+              <li>Webmail</li>
+              <li>Redeem code</li>
+              <li>WHOIS lookup</li>
+              <li>Site map</li>
+              <li>Web templates</li>
+              <li>Email templates</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4>Support</h4>
+            <ul>
+              <li>Contact us</li>
+              <li>Web chat</li>
+              <li>Open ticket</li>
+            </ul>
+          </div>
+          <div class="col social">
+            <h4>Social</h4>
+            <ul>
+              <li><img src="https://seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview.png" width="32" style="width: 32px;"></li>
+              <li><img src="https://seeklogo.net/wp-content/uploads/2018/10/whatsapp-logo.png" width="32" style="width: 32px;"></li>
+              <li><img src="https://seeklogo.net/wp-content/uploads/2016/11/twitter-icon-circle-blue-logo-preview.png" width="32" style="width: 32px;"></li>
+              <li><img src="https://seeklogo.net/wp-content/uploads/2016/06/Instagram-logo.png" width="32" style="width: 32px;"></li>
+            </ul>
+          </div>
+        <div class="clearfix"></div>
+        </div>
+        </div>
+        <!-- END OF FOOTER -->
+</div>
+
+
+</body>
+</html>
